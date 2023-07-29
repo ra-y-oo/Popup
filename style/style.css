@@ -1,0 +1,65 @@
+:root {
+  --clr-bg: #FCC2FC;
+  --card-bg: #C9F4AA;
+  --card-head: #E5FDD1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--clr-bg);
+}
+
+button {
+  padding: 10px 20px;
+  color: green;
+  font-weight: bold;
+  border: none;
+  background: var(--card-bg);
+  cursor: pointer;
+}
+
+dialog {
+  margin: auto;
+  border: none;
+  min-height: 150px;
+  max-width: 300px;
+  padding: 1rem;
+  background: var(--card-bg);
+  position: relative;
+}
+dialog .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+dialog .top h1 {
+  color: var(--card-head);
+  font-weight: 800;
+}
+dialog .top .close {
+  background: transparent;
+  cursor: pointer;
+}
+dialog .watermark {
+  z-index: -1;
+  position: absolute;
+  top: 70px;
+  width: 50px;
+  height: 50px;
+}
+dialog p {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 70px;
+  font-weight: 600;
+  color: green;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="index.js" defer></script>
+    <title>Quote Generator</title>
+</head>
+<body>
+    <button onclick="quote.showModal()" id="btn">Get Advice </button>
+    <dialog id="quote">
+        <form method="dialog">
+            <div class="top">
+                <h1>ADVICE</h1>
+                <button class="close" onclick="quote.closeModal()">
+                    <img src="./assets/icon-close.svg" alt="">
+                </button>
+            </div>
+            <p id="advice">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ad consequatur culpa ipsam sapiente nihil!</p>
+            <img class="watermark" src="./assets/bg-pattern-quotation.svg" alt="">
+        </form>
+      </dialog>
+</body>
+</html>
